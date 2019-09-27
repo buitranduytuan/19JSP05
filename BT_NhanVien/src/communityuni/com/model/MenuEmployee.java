@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class MenuEmployee {
 	static ArrayList< Employee>  listEmloyee = new ArrayList<Employee>();
+	static boolean kt = true;
 
 	public static void inPut() {
 		Employee nv;
@@ -42,20 +43,20 @@ public class MenuEmployee {
 
 		switch (chon) {
 		case 1: 
-			inPut(); 
+			inPut();
 			break;
 		case 2: 
 			outPut();
 			break;
 		case 3:
-			System.err.println("Thoát chương trình!");
-			System.exit(0);
+			System.out.println("Thoát chương trình!");
+			kt = false;
 			break;
 		}
 	}
 
 	public static void main(String[] args) {
-		while (true) {
+		while (kt) {
 			meNu();
 		}
 	}
