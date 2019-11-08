@@ -1,0 +1,137 @@
+body{
+	background-color:#eae5e5;
+}
+
+p{
+	margin: 0px, 0; /*canh tren dưới, trái phải với các dòng khác*/
+	line-height: 25px; /*độ cao dòng*/
+}
+
+#header-link{
+	width: auto;
+	top: 0;
+	height: 35px;
+    background-color: #00007f;
+}
+
+header{
+	width: auto;
+	height: 70px;
+    background-color: #e5f9f9;
+    border: 1px solid #CDCDCD;
+}
+
+header > img {
+	position: absolute;
+	top: 46px;
+	left: 200px;
+	width: 92px;
+	height: 70px;
+}
+
+#iconsearch, #iconfb, #iconhome{
+	color: #005fbf;
+	position: absolute;
+	top: 60px;
+}
+#iconsearch{
+	right: 50px;
+}
+
+#iconfb{
+	right: 100px;
+}
+#iconhome{
+	right: 150px;
+}
+
+#iconsearch:hover, #iconfb:hover, #iconhome:hover {
+	color: green;
+}
+
+header>h3{
+	color: #bf0000;
+	font-size: 15px;
+	position: absolute;
+	right: 30px;
+	top: 75px;
+}
+
+header h1 {
+	font-size: 20px;
+	margin: 20px 0px 0px 300px;
+	color: #0000bf;
+}
+nav{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#dk {
+	padding: 0px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 180%;
+	font-family: sans-serif;
+	font-style: bold;
+}
+#truong{
+	padding:0;
+	margin-left: 80px;
+}
+nav > ul> li{
+	text-align: center;
+	line-height: 10px;
+	margin: 5px 20px;
+	float: left;
+	list-style-type: none;
+}
+
+nav > ul> li>a{
+	cursor: pointer;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: white;
+}
+/* có thể dùng a:hover để chỉnh thay đổi màu khi rê chuột vào, đối với class ta chi cần ".tenclass",
+ còn với id thì ta dùng dấu #*/
+.link:hover{  
+	color: green;
+}
+table{
+	position: absolute;
+	margin-left: 430px;
+}
+
+input[type="text"],input[type="password"] ,input[type="email"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 3px 0;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.3s; /*hiệu ứnghiện ra từ từ*/
+}
+ 
+input[type="datetime-local"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 3px 0;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="text"]:focus,input[type="email"]:focus, input[type="password"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type="datime-local"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
